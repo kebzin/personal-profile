@@ -1,0 +1,37 @@
+
+
+.container{
+    display: flex;
+    font-family: sans-serif;
+
+}
+
+    /* animation: rotate 1s linear infinite; */
+  .calculation{
+    margin-left: 9rem;
+    margin-bottom: -1.8rem;
+    
+  }
+   
+.clculation-container{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    border: 1px solid gray;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 0rem;
+    background-color:antiquewhite;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: -3rem;
+}
+
+.input{
+  height: 2.5rem;
+}

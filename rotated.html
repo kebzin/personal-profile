@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .loader{
+            width: 40px;
+            height: 40px;
+            background-color: aqua;
+            border-radius: 50%;
+           
+            position: relative;
+            transform-origin: center;
+            animation: rotaated .6s  linear infinite;
+        }
+
+        
+        .circle{
+            width: 40px;
+            height: 40px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        .circle:nth-child(1){
+            margin-left: -100px;
+            animation: zoom2e 2s ease forwards infinite;
+            overflow: hidden;
+        }
+        img{
+            width: 100%;
+        }
+        .circle:nth-child(2){
+            margin-left: 100px;
+           margin-top: -40;
+           animation: zoom1 2s ease forwards infinite;
+
+        }
+
+        @keyframes rotaated{
+           
+            
+            to {
+                transform: rotate(360deg); 
+            }
+        }
+
+        /* @keyframes zoom{
+            0%{
+                background-color: brown;
+                transform: translate(10px);
+            }
+            25%{
+                background-color: rgb(49, 163, 144);
+                transform: translate(0px);
+            }
+            50%{
+                background-color: rgb(42, 126, 165);
+                transform: translate(-100px);
+            }
+            100%{
+                background-color: rgb(158, 65, 161);
+                transform: translate(0px);
+            }
+        }
+        @keyframes zoom2{
+            0%{
+                background-color: rgb(130, 42, 165);
+                transform: translate(10px);
+            }
+            25%{
+                background-color: rgb(49, 163, 144);
+                transform: translate(0px);
+            }
+            50%{
+                background-color: rgba(79, 42, 165, 0.61);
+                transform: translate(100px);
+            }
+            100%{
+                background-color: rgb(36, 106, 197);
+                transform: translate(0px);
+            }
+        } */
+
+
+
+       
+
+      
+        .content{
+            font-family: 'poppins' , sans-serif;
+            display: none;
+            
+        }
+
+        .button{
+            padding: .5rem  1rem;
+            background-color: brown;
+            color: #fff;
+            border-radius: .25rem;
+        }
+        
+        .message{
+            position: absolute;
+            background-color: wheat;
+            z-index: 10;
+            top: 50%;
+            padding: .9rem 1.4rem;
+            left: 50;
+          font-size: 2rem;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+
+<div class="content">
+    <h1>Welcome To MY Site</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum a libero natus expedita odio totam deleniti inventore, quo obcaecati provident ullam veniam debitis corporis unde eligendi esse laborum iusto ut?</p>
+    <a href="" class="button">Read More</a>
+
+    <div class="message">
+        <p>page is successfully loader</p>
+    </div>
+</div>
+
+
+<script src="/js.js"></script>
+</body>
+</html>
